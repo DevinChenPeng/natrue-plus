@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+	  "composite": true, // 启用项目编译
+	  "target": "ES6", // 编译后的目标版本
+	  "jsx": "preserve", // jsx编译策略
+	  "jsxFactory": "h", // jsx工厂函数
+	  "jsxFragmentFactory": "Fragment", // jsx片段
+	  "lib": ["ESNext", "DOM"], // 编译时引入的库文件
+	  "module": "ES6", // 模块类型
+	  "moduleResolution": "Node", // 模块解析策略
+	  "paths": {
+		"natrue-plus": ["./src"]
+	  },
+	  "types": ["vue/jsx", "jest"], // 引入vue的jsx类型定义
+	  "strict": true, // 启用所有严格类型检查选项
+	  "strictNullChecks": true, // 严格的null检查
+	  "noImplicitAny": false, // 允许隐式any类型
+	  "noUnusedLocals": true, // 检查未使用的局部变量
+	  "declaration": true, // 默认不声明文件
+	  "esModuleInterop": true, // 支持es6，commonjs模块
+	  "forceConsistentCasingInFileNames": true // 强制区分大小写
+	},
+	"include": ["src/**/*"], // 包含的文件
+	"exclude": ["node_modules", "dist"] // 排除的文件
+}
