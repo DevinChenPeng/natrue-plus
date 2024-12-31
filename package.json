@@ -7,6 +7,9 @@
     "play",
     "docs"
   ],
+  "scripts": {
+	"dev": "pnpm -C play dev"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DevinChenPeng/natrue-plus.git"
