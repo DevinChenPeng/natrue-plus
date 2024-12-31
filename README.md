@@ -1,2 +1,2 @@
-# natrue-puls
-natrue-puls is Vue3 + ts组件库
+# natrue-plus
+natrue-plus is Vue3 + ts组件库
