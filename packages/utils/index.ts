@@ -1,1 +1,2 @@
-export * from './with-install.ts';
+export * from './with-install';
+export * from './tools';

@@ -1,10 +1,10 @@
 import { ExtractPropTypes } from "vue";
 
-const props = {
+export const tagProps = {
     bordered: {
         type: Boolean,
-        default: true
+        default: true,
     }
 } as const;
 
-export type TagProps =  ExtractPropTypes<typeof props>;
+export type TagProps =  ExtractPropTypes<typeof tagProps>;

@@ -1,0 +1,11 @@
+@use './mixins//mixin' as *;
+.#{$namespace}-tag {
+    white-space: nowrap;
+    position: relative;
+    box-sizing: border-box;
+    cursor: default;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+	border-radius: var(--np-small-radius);
+}

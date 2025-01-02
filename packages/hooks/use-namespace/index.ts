@@ -1,4 +1,4 @@
-export const defaultNamespace = 'n';
+export const defaultNamespace = 'np';
 const statePrefix = 'is-';
 
 /**
