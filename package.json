@@ -8,7 +8,8 @@
     "docs"
   ],
   "scripts": {
-    "dev": "pnpm -C play dev"
+    "dev": "pnpm -C play dev",
+	"build": "gulp -f ./build/gulpfile.ts"
   },
   "repository": {
     "type": "git",
@@ -38,7 +39,10 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@types/gulp": "^4.0.17",
     "@vicons/ionicons4": "^0.13.0",
-    "sass": "^1.83.0"
+    "gulp": "^5.0.0",
+    "sass": "^1.83.0",
+    "sucrase": "^3.35.0"
   }
 }
