@@ -1,5 +1,5 @@
 {
-  "name": "@natrue/components",
+  "name": "@natrue-plus/components",
   "description": "all components are settled here",
   "main": "index.ts",
   "module": "index.ts",

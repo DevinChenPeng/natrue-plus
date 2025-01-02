@@ -1,14 +1,14 @@
 {
   "name": "natrue-plus",
   "version": "1.0.0",
-  "description": "vue3 + ts",
+  "description": "vue3 + ts monorepo",
   "workspaces": [
     "packages/*",
     "play",
     "docs"
   ],
   "scripts": {
-	"dev": "pnpm -C play dev"
+    "dev": "pnpm -C play dev"
   },
   "repository": {
     "type": "git",
@@ -28,10 +28,12 @@
   },
   "homepage": "https://github.com/DevinChenPeng/natrue-plus#readme",
   "dependencies": {
-	"@natrue/components": "workspace:*",
-	"@natrue/utils": "workspace:*",
-	"@natrue/theme-chalk": "workspace:*",
+    "@natrue-plus/components": "workspace:^",
+    "@natrue-plus/hooks": "workspace:^",
+    "@natrue-plus/theme-chalk": "workspace:^",
+    "@natrue-plus/utils": "workspace:^",
     "eslint": "^8.57.1",
+    "lodash": "^4.17.21",
     "typescript": "^5.7.2",
     "vue": "^3.5.13"
   }

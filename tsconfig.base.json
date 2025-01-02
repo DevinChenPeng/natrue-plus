@@ -1,24 +1,39 @@
 {
-  "compilerOptions": {
-    "outDir": "dist",
-    "target": "es2018",
-    "module": "esnext",
-    "baseUrl": ".",
-    "sourceMap": false,
-    "moduleResolution": "node",
-    "allowJs": false,
-    "strict": true,
-    "noUnusedLocals": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "removeComments": false,
-    "rootDir": ".",
-    "types": [],
-    "paths": {
-      "@element-plus/*": ["packages/*"],
-      "element-plus": ["packages/element-plus"]
-    },
-    "preserveSymlinks": true
+	"compilerOptions": {
+	  "allowJs": true, //允许编译器编译JS，JSX文件
+	  "target": "ES2015", //指定ECMAScript目标版本
+	  "useDefineForClassFields": true,
+	  "module": "ESNext", //设置程序的模块系统
+	  "moduleResolution": "Node", //模块解析策略。默认使用node的模块解析策略
+	  "strict": true, //启用所有严格类型检查选项
+	  "jsx": "preserve", //preserve模式,在preserve模式下生成代码中会保留JSX以供后续的转换操作使用
+	  "sourceMap": true, //生成目标文件的sourceMap文件
+	  "resolveJsonModule": true, //允许导入扩展名为“.json”的模块
+	  "esModuleInterop": false, //允许module.exports=xxx 导出，由import from 导入.因为很多老的js库使用了commonjs的导出方式，并且没有导出default属性
+	  "lib": [ //TS需要引用的库
+		"ESNext",
+		"DOM"
+	  ],
+	  "noImplicitAny": true, // 不允许隐式的any类型,在表达式和声明上有隐含的 any类型时报错
+	  "forceConsistentCasingInFileNames": true, //禁止对同一个文件的不一致的引用
+	  "allowSyntheticDefaultImports": true, //允许从没有设置默认导出的模块中默认导入
+	  "skipLibCheck": true, //忽略所有的声明文件（ *.d.ts）的类型检查
+	  "baseUrl": "./", // 解析非相对模块的基地址，默认是当前目录
+	  "paths": { //模块名到基于 baseUrl的路径映射的列表
+		"/@/*": [
+		  "src/*"
+		],
+	  },
+	  "types": [ //要包含的类型声明文件名列表
+		"vite/client",
+	  ]
+	},
+	"include": [ //包含的文件
+	  "src/**/*.ts",
+	  "src/**/*.d.ts",
+	  "src/**/*.tsx",
+	  "src/**/*.js",
+	  "src/**/*.jsx",
+	  "src/**/*.vue",
+	]
   }
-}

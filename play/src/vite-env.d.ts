@@ -1,2 +1,2 @@
 /// <reference types="vite/client" />
-/// <reference types="../../types/vue.shim.d.ts" />
+/// <reference types="../../typings/vue.shim.d.ts" />

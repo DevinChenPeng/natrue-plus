@@ -1,5 +1,6 @@
 export const defaultNamespace = 'n';
 const statePrefix = 'is-';
+
 /**
  * 生成基于BEM（Block Element Modifier）命名约定的CSS类名
  *
@@ -74,7 +75,3 @@ export const useNamespace = (block: string, namespaceOverrides?: string) => {
         is
     };
 };
-const ns = useNamespace('button');
-console.log(ns.b());
-console.log(ns.be('tree','icon'));
-console.log(ns.m('disabled'));
